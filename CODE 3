@@ -1,0 +1,14 @@
+py,pn=3/5,2/5
+pfy,phy=3/3,1/3
+pfn,phn=0/2,1/2
+
+yes=py*pfy*phy
+no=pn*pfn*phn
+
+print("P(Yes) =",py)
+print("P(No) =",pn)
+print("P(Fever=1|Yes) =",pfy)
+print("P(Headache=0|Yes) =",phy)
+print("Probability(Yes) =",yes)
+print("Probability(No) =",no)
+print("Disease =","Yes" if yes>no else "No")
