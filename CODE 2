@@ -1,0 +1,12 @@
+from sklearn.linear_model import LogisticRegression
+
+X=[[3,2],[2,1],[1,0],[3,3],[0,1]]
+y=[1,1,0,1,0]
+
+m=LogisticRegression()
+m.fit(X,y)
+
+print("Decision Boundary:")
+print(round(m.coef_[0][0],2),"*Offer +",round(m.coef_[0][1],2),"*Win +",round(m.intercept_[0],2),"= 0")
+
+print("Prediction =",m.predict([[2,1]])[0])
